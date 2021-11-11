@@ -7,7 +7,7 @@ from editoriales.models import Editorial
 
 class Libro(models.Model):
     nombre = models.CharField(max_length=100)
-    caratula = models.BinaryField()
+    caratula = models.ImageField(upload_to="librosCaratulas", null=True)
     paginas = models.IntegerField()
     publicado = models.BooleanField()
     fecha_publicacion = models.DateField()
