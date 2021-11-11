@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Lista de editoriales</title>
+</head>
+<body>
+<h1>Lista de editoriales:</h1>
+<ul>
+{% for editorial in editoriales %}
+    <li><a href="{{editorial.id}}">{{editorial.nombre}}</a></li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
